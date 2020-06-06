@@ -1,6 +1,6 @@
-import { Polly } from "aws-sdk";
+import { Polly } from 'aws-sdk';
 
-const p = new Polly({ region: "us-east-2" });
+const p = new Polly({ region: 'us-east-2' });
 
 export function transliterateText(
 	Text: string,
@@ -16,6 +16,12 @@ export function transliterateSSML(
 	OutputFormat: Polly.OutputFormat
 ) {
 	return p
-		.synthesizeSpeech({ Text, TextType: "ssml", VoiceId, OutputFormat })
+		.synthesizeSpeech({
+			Text,
+			TextType: 'ssml',
+			VoiceId,
+			OutputFormat,
+			Engine: 'neural'
+		})
 		.createReadStream();
 }

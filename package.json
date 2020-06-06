@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
+		"postinstall": "lerna bootstrap",
 		"dev": "lerna run dev",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

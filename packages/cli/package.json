@@ -13,6 +13,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@types/commander": "^2.12.2",
+		"@types/html-to-text": "^5.1.0",
 		"@types/node": "14.0.11",
 		"@types/open": "^6.2.1",
 		"@types/tmp": "0.2.0",
@@ -22,7 +23,10 @@
 	},
 	"dependencies": {
 		"commander": "^5.1.0",
+		"html-to-text": "^5.1.1",
 		"open": "^7.0.4",
-		"polydictyl-lib": "^1.0.0"
+		"polydictyl-lib": "^1.0.0",
+		"rss-parser": "^3.8.0",
+		"rxjs": "^6.5.5"
 	}
 }
