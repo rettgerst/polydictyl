@@ -1,6 +1,6 @@
 import { Polly } from 'aws-sdk';
 
-const p = new Polly({ region: 'us-east-2' });
+const p = new Polly({ region: 'us-east-1' });
 
 export function transliterateText(
 	Text: string,
